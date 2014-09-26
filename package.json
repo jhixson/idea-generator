@@ -33,5 +33,9 @@
     "url": "git://github.com/hixsonj/idea-generator.git"
   },
   "author": "hixsonj",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "chai": "~1.9.1"
+  }
 }
