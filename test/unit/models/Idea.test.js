@@ -1,4 +1,4 @@
-describe.only('IdeaModel', function() {
+describe('IdeaModel', function() {
 
   describe('#create()', function() {
     it('should be invalid without a name', function (done) {

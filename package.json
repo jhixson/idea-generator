@@ -36,6 +36,7 @@
   "license": "",
   "devDependencies": {
     "mocha": "~1.21.4",
-    "chai": "~1.9.1"
+    "chai": "~1.9.1",
+    "supertest": "~0.13.0"
   }
 }

@@ -6,6 +6,12 @@
  */
 
 module.exports = {
+
+  list: function(req, res) {
+    Idea.find().exec(function(err, ideas) {
+      res.view({ ideas: ideas, title: 'Ideas' });
+    });
+  },
 	
 };
 

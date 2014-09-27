@@ -2,6 +2,8 @@ var Sails = require('sails');
 var chai = require('chai');
 should = chai.should();
 
+request = require('supertest');
+
 before(function(done) {
   Sails.lift({
     // configuration for testing purposes

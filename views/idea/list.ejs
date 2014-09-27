@@ -1,0 +1,16 @@
+<section class="pure-g">
+  <div class="pure-u-1-4">&nbsp;</div>
+  <div class="pure-u-1-2">
+    <h2>Ideas!</h2>
+    <ul>
+      <% _.each(ideas, function (idea) { %>
+        <li>
+          <h4><%= idea.title %><% if(idea.user) { %> by <cite><%= idea.user %><% } %></cite></h4>
+          <p><%= idea.description %></p>
+          <a href="#">Agree!</a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="pure-u-1-4">&nbsp;</div>
+</section>
