@@ -14,23 +14,30 @@ I didn't intend for the service itself to have any front-end to it. Rather, we c
 
 For example:
 
-* Get all ideas:
-        GET http://localhost:1337/idea
-* Create an idea:
-        POST http://localhost:1337/idea
-        {
-            "title": "My great idea",
-            "description: "More information...",
-            "user": "Joe Fox"
-        }
-* Get all votes:
-        GET http://localhost:1337/vote
-* Vote on an idea
-        POST http://localhost:1337/vote
-        {
-            "idea": 1,
-            "userId": "some-session-id"
-        }
+**Get all ideas:**
+```GET http://localhost:1337/idea```
+
+**Create an idea:**
+```
+POST http://localhost:1337/idea
+{
+    "title": "My great idea",
+    "description: "More information...",
+    "user": "Joe Fox"
+}
+```
+
+**Get all votes:**
+```GET http://localhost:1337/vote```
+
+**Vote on an idea:**
+```
+POST http://localhost:1337/vote
+{
+    "idea": 1,
+    "userId": "some-session-id"
+}
+```
 
 ### To-do:
 * Configure testing to use separate database
