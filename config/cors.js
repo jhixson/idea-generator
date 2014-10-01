@@ -47,7 +47,7 @@ module.exports.cors = {
   *                                                                          *
   ***************************************************************************/
 
-  origin: 'http://localhost:4567,http://westmoreland-open-hack.github.io'
+  origin: 'http://localhost:4567,http://westmoreland-open-hack.github.io,https://westmoreland-open-hack.github.io'
 
   /***************************************************************************
   *                                                                          *
