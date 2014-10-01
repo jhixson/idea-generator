@@ -11,7 +11,7 @@ module.exports = {
     Idea.find().exec(function(err, ideas) {
       res.view({ ideas: ideas, title: 'Ideas' });
     });
-  },
+  }
 	
 };
 

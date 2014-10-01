@@ -11,6 +11,9 @@ module.exports = {
     userId: {
       type: 'string' // this will probably just be a session id of some sort
     },
+    ip_address: {
+      type: 'string'
+    },
     idea: {
       model: 'idea'
     }

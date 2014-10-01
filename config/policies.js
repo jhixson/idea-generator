@@ -50,6 +50,10 @@ module.exports.policies = {
 	// }
 
   VoteController: {
-    create: 'canVote'
+    create: ['canVote', 'setRemoteAddress']
+  },
+
+  IdeaController: {
+    create: 'setRemoteAddress'
   }
 };

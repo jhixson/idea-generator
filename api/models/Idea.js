@@ -18,11 +18,14 @@ module.exports = {
     user: {
       type: 'string'
     },
+    ip_address: {
+      type: 'string'
+    },
     votes: {
       collection: 'vote',
       via: 'idea'
     }
-
   }
+
 };
 
