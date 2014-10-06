@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  '/idea/list/:userId': 'IdeaController.list'
 
   /***************************************************************************
   *                                                                          *

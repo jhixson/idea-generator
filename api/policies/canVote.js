@@ -19,8 +19,7 @@ module.exports = function canVote(req, res, next) {
     if(_.isUndefined(idea))
       return res.notFound();
 
-    var idea_votes = _.map(idea.votes, function(v) { return v.userId });
-    var voted = _.contains(idea_votes, userId);
+    var voted = Idea.votedFor({ idea: idea, userId: userId });
     if(voted)
       return res.forbidden('You already voted for this idea!');
 

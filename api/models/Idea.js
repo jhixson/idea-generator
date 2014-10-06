@@ -25,6 +25,12 @@ module.exports = {
       collection: 'vote',
       via: 'idea'
     }
+  },
+
+  votedFor: function(options, next) {
+    var idea_votes = _.map(options.idea.votes, function(v) { return v.userId });
+    var voted = _.contains(idea_votes, options.userId);
+    return voted;
   }
 
 };
