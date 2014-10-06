@@ -42,4 +42,4 @@ POST http://localhost:1337/vote
 ### To-do:
 * Configure testing to use separate database
 * ~~Get deployment working~~ http://woh-ideas.herokuapp.com/
-* Set up cors to allow remote posting from http://westmoreland-open-hack.github.io/
+* ~~Set up cors to allow remote posting from http://westmoreland-open-hack.github.io/~~
